@@ -17,9 +17,14 @@ code {
 /* Add margin and padding to the blog post container */
 .blog-post {
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 20px;      /* Space inside the blog post container */
   margin: 20px 0;     /* Space between the blog posts */
+  transition:1.5s ease-in-out;
+}
+
+.blog-post:hover{
+  background: linear-gradient(to right, rgb(176, 220, 255), rgb(183, 255, 255));
 }
 
 /* Add margin to the title */
