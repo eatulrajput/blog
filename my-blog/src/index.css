@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -16,10 +17,14 @@ code {
 
 /* Add margin and padding to the blog post container */
 .blog-post {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
   border: 1px solid #ddd;
   border-radius: 20px;
-  padding: 20px;      /* Space inside the blog post container */
+  padding: 20px 200px;      /* Space inside the blog post container */
   margin: 20px 20px;     /* Space between the blog posts */
   transition:1.5s ease-in-out;
 }
@@ -55,4 +60,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.blog-image {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 28px;
 }

@@ -1,13 +1,11 @@
 /* Navbar.css */
 .navbar {
-  margin-bottom: 20px;
   background: linear-gradient(to right, rgb(20, 149, 255), rgb(0, 168, 168));
   color: white;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border-radius: 28px; */
 }
 
 .navbar-brand a {

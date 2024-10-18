@@ -13,8 +13,9 @@ const BlogPost = () => {
   return (
     <div className="blog-post">
       <h2>{post.title}</h2>
-      <p>{post.body}</p>
       <p><strong>Author:</strong> {post.author}</p>
+      <img src={post.image} alt={post.title} className="blog-image" /> {/* Corrected image source */}
+      <p>{post.body}</p>
     </div>
   );
 };
