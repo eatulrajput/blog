@@ -1,4 +1,5 @@
-# CuratedClicks Blog Website
+#[recording.webm](https://github.com/user-attachments/assets/9f8e3356-fd16-40b2-87e3-0be6ede6fab7)
+ CuratedClicks Blog Website
 
 CuratedClicks is a responsive and modern blog website built using React. It features a customizable light/dark theme, a dynamic blog post listing, and an intuitive user interface. The website is fully responsive and mobile-friendly, ensuring a seamless experience on all devices.
 
@@ -85,10 +86,17 @@ npm start
 ## Screenshots
 
 - **Light Mode**
+  ![Screenshot from 2024-10-18 17-02-56](https://github.com/user-attachments/assets/ce925914-a7aa-486f-b97d-8b82bb1d8f31)
+
 
 - **Dark Mode**
+  ![Screenshot from 2024-10-18 17-02-37](https://github.com/user-attachments/assets/e5a50f96-a19d-424b-8a74-b85397ef5c07)
+
 
 - **Mobile View**
+  ![menu](https://github.com/user-attachments/assets/20f09e30-9d2d-49f8-8bfe-31cf31daefde)
+
+- 
 
 ## Technologies Used
 
