@@ -1,3 +1,5 @@
+/* contact.css */
+
 .contact-container {
   padding: 40px;
   max-width: 800px;
@@ -5,6 +7,7 @@
   background-color: #f9f9f9; /* Light background color for contrast */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 }
 
 .contact-container h1 {
@@ -74,3 +77,34 @@
   outline: none; /* Remove default outline on focus */
 }
 
+/* Dark Mode Styles */
+body.dark-mode .contact-container {
+  background-color: #333; /* Dark background for contrast */
+  color: #f9f9f9; /* Light text color for visibility */
+}
+
+body.dark-mode .contact-container h1,
+body.dark-mode .contact-container p,
+body.dark-mode .contact-container label {
+  color: #f9f9f9; /* Light text color for headings and labels in dark mode */
+}
+
+body.dark-mode .contact-container input,
+body.dark-mode .contact-container textarea {
+  background-color: #444; /* Darker input fields */
+  border: 1px solid #666; /* Darker border for input fields */
+  color: #f9f9f9; /* Light text color for input fields */
+}
+
+body.dark-mode .contact-container input:focus,
+body.dark-mode .contact-container textarea:focus {
+  border-color: #007bff; /* Keep border color on focus */
+}
+
+body.dark-mode .contact-container button {
+  background-color: #007bff; /* Keep button color */
+}
+
+body.dark-mode .contact-container button:hover {
+  background-color: #0056b3; /* Keep hover color for button */
+}
