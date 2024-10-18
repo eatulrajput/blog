@@ -1,4 +1,3 @@
-/* Navbar.css */
 .navbar {
   background: linear-gradient(to right, rgb(20, 149, 255), rgb(0, 168, 168)); /* Light mode gradient */
   color: white;
@@ -75,4 +74,72 @@ body.dark-mode .navbar-links a:hover {
 
 .theme-toggle-btn:hover {
   transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Responsive Menu Styles */
+.menu-toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show the hamburger menu icon on small screens */
+@media (max-width: 768px) {
+  .menu-toggle-btn {
+    display: block;
+  }
+
+  /* Hide the links by default on smaller screens */
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Show the links when the menu is open */
+  .navbar-links.open {
+    display: flex;
+    position: absolute;
+    top: 60px; /* Adjust according to your navbar height */
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for mobile menu */
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .navbar-links li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Hide the scroll-to-top button initially */
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the scroll-to-top button when the user scrolls down */
+.scroll-to-top.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Hide the button again when scrolled to the top */
+.scroll-to-top.hide {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
