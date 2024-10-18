@@ -1,3 +1,4 @@
+// BlogPost.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import postsData from '../data/posts'; // Import your local posts data
@@ -11,11 +12,11 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="blog-post">
+    <div className="blog-post-container"> {/* Add a class for styling */}
       <h2>{post.title}</h2>
-      <p><strong>Author:</strong> {post.author}</p>
-      <img src={post.image} alt={post.title} className="blog-image" /> {/* Corrected image source */}
+      <img src={post.image} alt={post.title} className="blog-image" /> {/* Add the image */}
       <p>{post.body}</p>
+      <p><strong>Author:</strong> {post.author}</p>
     </div>
   );
 };

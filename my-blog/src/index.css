@@ -15,8 +15,30 @@ code {
 
 /* index.css */
 
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the blog posts horizontally */
+}
+
 /* Add margin and padding to the blog post container */
+/* BlogPost.css */
+.blog-post-container {
+  width: 50%; /* Set the width to 50% */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  background-color: white; /* Optional: Background color */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.blog-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .blog-post {
+  width: 50%; /* Set the width to 50% */
   display: flex;
   justify-content: center;
   align-items: center;

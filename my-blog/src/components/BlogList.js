@@ -8,21 +8,18 @@ const BlogList = () => {
   useEffect(() => {
     // Load the posts from the JS object
     setPosts(postsData);
-    console.log(postsData); // Log the postsData
   }, []);
 
-  console.log(posts); // Log the posts state
-
   return (
-    <div>
+    <div className="blog-list"> {/* Add the class here for styling */}
       <h1>Blog Posts</h1>
       {Array.isArray(posts) && posts.length > 0 ? (
         posts.map(post => (
           <div key={post.id} className="blog-post">
-            <p><strong>Author:</strong> {post.author}</p>
             <h2>{post.title}</h2>
             <img src={post.image} alt={post.title} className="blog-image" /> {/* Display the image */}
             <p>{post.body}</p>
+            <p><strong>Author:</strong> {post.author}</p>
             <Link to={`/post/${post.id}`}>Read More</Link>
           </div>
         ))
