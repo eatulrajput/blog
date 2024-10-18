@@ -1,5 +1,5 @@
 body {
-  margin: 20px;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -16,15 +16,20 @@ code {
 
 /* Add margin and padding to the blog post container */
 .blog-post {
+  
   border: 1px solid #ddd;
   border-radius: 20px;
   padding: 20px;      /* Space inside the blog post container */
-  margin: 20px 0;     /* Space between the blog posts */
+  margin: 20px 20px;     /* Space between the blog posts */
   transition:1.5s ease-in-out;
 }
 
 .blog-post:hover{
   background: linear-gradient(to right, rgb(176, 220, 255), rgb(183, 255, 255));
+}
+
+h1{
+  margin: 20px 20px;
 }
 
 /* Add margin to the title */
